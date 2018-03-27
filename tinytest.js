@@ -99,6 +99,6 @@ var TinyTest = {
 var fail               = TinyTest.fail,
     assert             = TinyTest.assert,
     assertEquals       = TinyTest.assertEquals,
-    eq                 = TinyTest.assertEquals, // alias for assertEquals
+    eq                 = TinyTest.assertStrictEquals, // alias for assertStrictEquals
     assertStrictEquals = TinyTest.assertStrictEquals,
     tests              = TinyTest.run;
