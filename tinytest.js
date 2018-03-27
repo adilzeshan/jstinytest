@@ -55,6 +55,14 @@ var TinyTest = {
         }
         setTimeout(function() { // Give document a chance to complete
                 document.body.style.backgroundColor = (failures == 0 ? '#99ff99' : '#ff9999');
+
+                var numberOfTests = Object.keys(tests).length;
+                var successes = numberOfTests - failures;
+                var summaryString = 'Ran ' + numberOfTests + ' tests: ' + successes + ' successes, ' + failures + ' failures.';
+
+                var summaryElement = document.createElement('h2');
+                summaryElement.textContent = summaryString;
+                document.body.appendChild(summaryElement);
         }, 0);
     },
 
