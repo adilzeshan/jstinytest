@@ -83,9 +83,9 @@ var TinyTest = {
 
 };
 
-var fail               = TinyTest.fail.bind(TinyTest),
-    assert             = TinyTest.assert.bind(TinyTest),
-    assertEquals       = TinyTest.assertEquals.bind(TinyTest),
-    eq                 = TinyTest.assertEquals.bind(TinyTest), // alias for assertEquals
-    assertStrictEquals = TinyTest.assertStrictEquals.bind(TinyTest),
-    tests              = TinyTest.run.bind(TinyTest);
+var fail               = TinyTest.fail,
+    assert             = TinyTest.assert,
+    assertEquals       = TinyTest.assertEquals,
+    eq                 = TinyTest.assertEquals, // alias for assertEquals
+    assertStrictEquals = TinyTest.assertStrictEquals,
+    tests              = TinyTest.run;
