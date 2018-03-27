@@ -44,7 +44,7 @@ var TinyTest = {
         for (var testName in tests) {
             var testAction = tests[testName];
             try {
-                testAction.apply(this);
+                testAction();
                 console.log('Test:', testName, 'OK');
             } catch (e) {
                 failures++;
