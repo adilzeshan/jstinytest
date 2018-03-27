@@ -45,7 +45,7 @@ var TinyTest = {
             var testAction = tests[testName];
             try {
                 testAction();
-                console.log('Test:', testName, 'OK');
+                console.log('%c' + testName + ' OK', 'color: green;');
             } catch (e) {
                 failures++;
                 console.error('Test:', testName, 'FAILED', e);
