@@ -48,7 +48,7 @@ var TinyTest = {
                 console.log('%c' + testName + ' OK', 'color: green;');
             } catch (e) {
                 failures++;
-                console.error('Test:', testName, 'FAILED', e);
+                console.log('Test:', testName, 'FAILED', e);
                 console.error(e.stack);
             }
         }
